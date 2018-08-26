@@ -18,6 +18,17 @@ int i=sc.nextInt();
 4. Программа должна выводить квадрат считанного числа.
 
  */
+import java.util.Random;
+import java.util.Scanner;
 
 class TaskB1 {
+    private static boolean square;
+
+    public static void main(String args[]) {
+
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        int square = a * a ;
+        System.out.println(square);
+    }
 }
