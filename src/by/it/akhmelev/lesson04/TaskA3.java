@@ -38,8 +38,6 @@ public class TaskA3 {
             System.out.println(c + " " + b);
         else if (a == c)
             System.out.println(a + " " + c);
-
-
     }
 
 }
