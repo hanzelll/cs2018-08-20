@@ -1,4 +1,7 @@
 package by.it.gashenko.lesson03;
+
+import java.util.Scanner;
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -20,6 +23,21 @@ package by.it.gashenko.lesson03;
     5. Метод sumDigitsInNumber должен правильно возвращать сумму всех цифр в числе number.
 */
 public class TaskC2 {
+    static int sumDigitsInNumber(int n) {
+
+        int a4 = n / 1000;
+        int a3 = (n - a4 * 1000) / 100;
+        int a2 = (n - a4 * 1000 - a3 * 100) / 10;
+        int a1 = (n - a4 * 1000 - a3 * 100 - a2 * 10);
+        return a1 + a2 + a3 + a4;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+
+
+    }
 
 
 
